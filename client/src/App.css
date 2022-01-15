@@ -1,0 +1,35 @@
+.todo-form {
+  width: 400px;
+  margin: 13px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-form .todo-form--field {
+  width: 75%;
+}
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+.list {
+  background-color: rgb(247, 247, 247);
+}
+
+.list-tasks-done {
+  text-decoration: line-through;
+}
+
+.list-task-done li {
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: 480px) {
+  .todo-form {
+    width: 300px;
+    margin: 13px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
