@@ -14,7 +14,6 @@ import {
   editTodo,
   completeTodo,
 } from "./server/services/todo.js";
-import path from "path";
 
 // load env vairables
 dotenv.config();
@@ -22,7 +21,7 @@ connectDB();
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use(bodyParser.urlencoded());
+// app.use(bodyParser.urlencoded());
 app.use(express.static("./client/build"));
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } });
