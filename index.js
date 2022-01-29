@@ -98,6 +98,7 @@ io.on("connection", (socket) => {
 
 // Routes
 app.use("/api/todos", todoRoutes);
+
 app.get("*", (req, res) => {
   res.sendFile("./client/build/index.html");
 });
